@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+ 	display:flex;
+}
+
+
+.tudo{
+	margin: 5;
+}
+
+.le{
+text-align: center;
+	width: 50%;
+	height:100vh;
+	margin: 0px;
+	background-image:url('img/pug.png');
+	background-position:center;
+
+	background-size:85%;
+	background-repeat: no-repeat;
+
+
