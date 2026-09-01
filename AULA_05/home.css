@@ -1,57 +1,204 @@
-header{
-	font-family: Arial, Helvetica, sans-serif;	
-	display: flex;
-	align-items:center;
-	justify-content: space-between;
-	color:white;
-	background-color: black;
-	height: 100px;
-	width:100%;
-	text-align:center;
+body {
+    margin: 0px;
 }
-	
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
 #perfil {
-	height:90px;
-	width: 80px;
-	border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
-body{
-	margin:0px;
-
-}
 header p {
-font-size: 25px;
-text-transform: uppercase;
-padding-right: 10px;
-font-weight:bold;
-
-}
-.pesquisa{
-	display: flex;
-	justify-content:center;
-	height:70px;
-	margin:80px;	
-}		
-
-.pesquisa input{
-	width: 700px;
-	border-radius:50px;	
-	font-size:30px;
-	padding-left:30px;
-	align-items: center;
-}	
-
-.grupo-card{
-	display: flex;
-	justify-content: space-between;
-
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    font-weight: bold;
 }
 
-.cards{
-height: 284px;
-width:219px;
-background-size: cover;
-background-position: center;
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin: 80px;
 }
 
+.pesquisa input {
+    width: 500px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.grupo-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    height: 284px;
+    width: 219px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 34px;
+    cursor: pointer;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s, 0.2s;
+}
+
+.card:hover {
+    opacity: 0.7;
+}
+
+.card p {
+    color: white;
+    font-size: 40px;
+    padding-left: 25px;
+    padding-top: 175px;
+}
+
+.grupo-anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 430px;
+    margin-top: 50px;
+}
+
+.card-anuncio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 70px;
+}
+
+.anuncio-le {
+    width: 50%;
+    text-align: center;
+}
+
+.anuncio-le p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.anuncio-le button {
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 50%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.anuncio-ld {
+    width: 50%;
+    height: 80%;
+    background-image: url('./img/gato_laranja.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 70px;
+    margin: 20px;
+}
+
+.grupo-dicas {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dicas-le {
+    width: 50%;
+}
+
+.dicas-le h1 {
+    font-size: 41px;
+    font-weight: bold;
+}
+
+.dicas-le p {
+    font-size: 28px;
+    color: #5C5C5C;
+    margin-top: 50px;
+}
+
+.dicas-le span {
+    font-weight: bold;
+}
+
+.dicas-ld img {
+    width: 684px;
+    height: 800px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.grupo-assinar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupo-assinar input {
+    height: 50px;
+    width: 500px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 24px;
+    padding-left: 10px;
+    color: white;
+}
+
+.grupo-assinar button{
+    height: 50px;
+    width: 200px;
+    background-color: #EBC154;
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.menu-rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-itens ul{
+    display: flex;
+}
+
+.menu-itens li{
+    margin-left: 20px;
+    list-style-type: none;
+}
