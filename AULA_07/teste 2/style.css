@@ -1,0 +1,142 @@
+body {
+	margin-top: 40px;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-image: url('background.jpg');
+	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+
+/* Container flex organizando o tabuleiro na esquerda e painel na direita */
+.jogo-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	width: 100%;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+/* Tabuleiro mantendo a sua estrutura original */
+.linha {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 320px;
+	width: 950px;
+	background-color: black;
+}
+
+.posicao {
+	border-radius: 20px;
+	margin: 10px;
+	border: 2px solid #000000;
+	height: 300px;
+	width: 300px;
+	background-color: white;
+
+	/* Alinhamento das jogadas X e O */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 150px;
+	font-weight: bold;
+	cursor: pointer;
+	user-select: none;
+}
+
+.posicao:hover {
+	background-color: #ffb300;
+}
+
+/* Painel Lateral na Direita */
+.painel-lateral {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	width: 320px;
+}
+
+.box-painel {
+	background-color: white;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	padding: 20px;
+	text-align: left;
+}
+
+.box-painel h2 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 22px;
+	text-align: center;
+	border-bottom: 2px solid #000000;
+	padding-bottom: 8px;
+}
+
+.campo {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 15px;
+}
+
+.campo label {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+select {
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	background-color: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+button {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	background-color: #ffb300;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #e6a100;
+}
+
+/* Tabela de Placar */
+.placar {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.placar th, .placar td {
+	border: 2px solid #000000;
+	padding: 12px 8px;
+	text-align: center;
+}
+
+.placar th {
+	background-color: #f0f0f0;
+	font-size: 14px;
+}
+
+.placar td {
+	font-size: 28px;
+	font-weight: bold;
+	background-color: #ffffff;
+}

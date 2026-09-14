@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>O melhor jogo da velha</title>
+</head>
+<body>
+	<h1>JOGO DA VELHA</h1>
+
+	<div class="jogo-container">
+		<!-- Tabuleiro no lado esquerdo -->
+		<div class="tabuleiro">
+			<div class="linha">
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+			</div>
+			<div class="linha">
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+			</div>
+			<div class="linha">
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+				<div class="posicao"></div>
+			</div>
+		</div>
+
+		<!-- Painel de Dados à Direita -->
+		<div class="painel-lateral">
+			<div class="box-painel">
+				<h2>OPÇÕES</h2>
+				<div class="campo">
+					<label for="modo">Modo de Jogo:</label>
+					<select id="modo">
+						<option value="pvp">Humano vs Humano</option>
+						<option value="facil">vs Robô (Fácil)</option>
+						<option value="medio">vs Robô (Médio)</option>
+						<option value="dificil">vs Robô (Difícil)</option>
+					</select>
+				</div>
+				<button id="btnReset">Reiniciar Jogo</button>
+			</div>
+
+			<div class="box-painel">
+				<h2>PLACAR</h2>
+				<table class="placar">
+					<thead>
+						<tr>
+							<th>Jogador (X)</th>
+							<th>Oponente (O)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="placarX">0</td>
+							<td id="placarO">0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	margin-top: 100px;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-image: url('background.jpg');
+	justify-items: center;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.linha {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	height: 320px;
+	width: 950px;
+	background-color: black;
+}
+
+.posicao {
+	border-radius: 20px;
+	margin: 10px;
+	border: 2px solid #000000;
+	height: 300px;
+	width: 300px;
+	background-color: white;
+	
+	/* Alinhamento das jogadas X e O */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 150px;
+	font-weight: bold;
+	cursor: pointer;
+	user-select: none;
+}
+
+.posicao:hover {
+	background-color: #ffb300;
+}
