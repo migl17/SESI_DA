@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Bora Brasil</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <p>Digite seu voto:</p>
+            <h2 id="campo-numero">_ _ _ _</h2>
+            <p id="mensagem"></p>
+        </div>
+
+        <div class="teclado">
+            <div class="linha">
+                <button class="botao" onclick="inserirNumero('1')">1</button>
+                <button class="botao" onclick="inserirNumero('2')">2</button>
+                <button class="botao" onclick="inserirNumero('3')">3</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="inserirNumero('4')">4</button>
+                <button class="botao" onclick="inserirNumero('5')">5</button>
+                <button class="botao" onclick="inserirNumero('6')">6</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="inserirNumero('7')">7</button>
+                <button class="botao" onclick="inserirNumero('8')">8</button>
+                <button class="botao" onclick="inserirNumero('9')">9</button>
+            </div>
+            <div class="linha">
+                <button class="botao" onclick="inserirNumero('0')">0</button>
+            </div>
+            <div class="linha-acoes">
+                <button class="btn-corrige" onclick="corrige()">CORRIGE</button>
+                <button class="btn-confirma" onclick="confirma()">CONFIRMA</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
